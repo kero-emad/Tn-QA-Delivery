@@ -1,0 +1,27 @@
+<svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="80" fill="transparent"/>
+  
+  <!-- Golden border circle -->
+  <circle cx="40" cy="40" r="30" fill="none" stroke="#C7A942" stroke-width="3"/>
+  
+  <!-- Tunisia flag (left half) -->
+  <path d="M 20 40 A 20 20 0 0 1 40 20 L 40 60 A 20 20 0 0 1 20 40" fill="#E70013"/>
+  <circle cx="35" cy="40" r="8" fill="#FFFFFF"/>
+  <circle cx="36" cy="40" r="6" fill="#E70013"/>
+  <path d="M 36 34 L 39 38 L 43 36 L 40 40 L 42 44 L 36 42 L 30 44 L 32 40 L 29 36 L 33 38 Z" fill="#FFFFFF"/>
+  
+  <!-- Qatar flag (right half) -->
+  <path d="M 40 20 A 20 20 0 0 1 60 40 A 20 20 0 0 1 40 60 L 40 20" fill="#8D1B3D"/>
+  <path d="M 40 20 L 42 23 L 40 26 L 42 29 L 40 32 L 42 35 L 40 38 L 42 41 L 40 44 L 42 47 L 40 50 L 42 53 L 40 56 L 42 59 L 40 60 L 40 20 Z" fill="#FFFFFF"/>
+  
+  <!-- Company name -->
+  <text x="90" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">
+    Tn-QA Delivery
+  </text>
+  
+  <!-- Tagline in Arabic -->
+  <text x="90" y="55" font-family="Arial, sans-serif" font-size="10" fill="#6C757D">
+    خدمة توصيل سريعة وآمنة
+  </text>
+</svg>
