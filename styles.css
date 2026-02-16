@@ -1718,6 +1718,9 @@ a:hover {
 /* =========================
    Responsive Design
    ========================= */
+/* =========================
+   Responsive Design
+   ========================= */
 @media (max-width: 968px) {
     .container {
         padding: 0 1.5rem;
@@ -1773,16 +1776,31 @@ a:hover {
     }
 
     .merchant-premium-wrapper {
-        padding: 3rem 1.5rem;
-        border-radius: 30px;
+        padding: 2rem 1rem;
+        /* Reduced padding */
+        border-radius: 20px;
+        /* Smaller radius */
+        border-width: 1px;
+        /* Thinner border */
+    }
+
+    .merchant-premium-wrapper::after {
+        top: 1rem;
+        font-size: 0.6rem;
+        padding: 0 0.5rem;
     }
 
     .merchant-main-info h3 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+        /* Smaller title */
+        margin-bottom: 1rem;
     }
 
     .merchant-main-info p {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        /* Smaller text */
+        margin-bottom: 2rem;
+        line-height: 1.6;
     }
 }
 
@@ -1883,23 +1901,63 @@ a:hover {
     }
 
     .merchant-benefits-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        /* Single column for benefits */
         gap: 1rem;
+    }
+
+    .section-group-header {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .section-group-header h3 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section-phone {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .highlight-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .highlight-actions {
+        flex-direction: column;
     }
 }
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 1.2rem;
+        padding: 0 1rem;
+        /* Minimal padding */
+    }
+
+    .slide-content {
+        padding: 1.5rem 1rem;
+        /* Compact padding */
+        border-radius: 15px;
     }
 
     .slide-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        /* Readable on small screens */
+        margin-bottom: 1rem;
+    }
+
+    .slide-description {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
     }
 
     .flag-icon {
-        font-size: 4rem;
-        margin-bottom: 1.5rem;
+        font-size: 3rem;
+        margin-bottom: 1rem;
     }
 
     .contact-card,
@@ -1907,12 +1965,21 @@ a:hover {
         padding: 1.5rem;
     }
 
-    .merchant-benefits-grid {
-        grid-template-columns: 1fr;
+    .merchant-premium-wrapper {
+        padding: 1.5rem 0.5rem;
+        /* Very compact */
     }
 
     .merchant-main-info h3 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+    }
+
+    .merchant-main-info p {
+        font-size: 0.95rem;
+    }
+
+    .merchant-benefits-grid {
+        grid-template-columns: 1fr;
     }
 
     .floating-whatsapp {
