@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tn-QA Delivery - خدمة توصيل سريعة وآمنة في تونس وقطر">
-    <meta name="keywords" content="توصيل، تونس، قطر، خدمات توصيل، Tn-QA Delivery">
+    <meta name="description" content="خدمات Tn-QA Delivery في تونس - توصيل سريع وآمن">
+    <meta name="keywords" content="توصيل تونس، خدمات توصيل، Tn-QA Delivery تونس">
     <meta name="author" content="Tn-QA Delivery">
-    <title>Tn-QA Delivery - خدمة توصيل سريعة وآمنة</title>
+    <title>Tn-QA Delivery - خدمات تونس</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +29,7 @@
             </a>
 
             <div class="nav-links" id="navLinks">
-                <a href="index.html" class="nav-link active" data-i18n="nav_home">الرئيسية</a>
+                <a href="index.html" class="nav-link" data-i18n="nav_home">الرئيسية</a>
                 <a href="contact.html" class="nav-link" data-i18n="nav_contact">التواصل</a>
                 <button class="lang-toggle" id="langToggle" onclick="switchLanguage(currentLang === 'ar' ? 'en' : 'ar')"
                     aria-label="Switch language">
@@ -65,124 +65,32 @@
         </div>
     </nav>
 
-    <!-- Hero Slider Section -->
-    <section class="hero-slider">
-        <div class="slider-container">
-            <!-- Slide 1: Tunisia Services -->
-            <div class="slide active slide-tunisia">
-                <div class="slide-bg"></div>
-                <div class="slide-content">
-                    <div class="flag-icon">🇹🇳</div>
-                    <h2 class="slide-title" data-i18n="hero_tunisia_title">خدمات توصيل الأفراد والأغراض داخل تونس</h2>
-                    <p class="slide-description" data-i18n="hero_tunisia_desc">
-                        نقدم لكم خدمة توصيل سريعة وآمنة داخل دولة تونس،
-                        مع ضمان وصول أغراضكم في الوقت المحدد وبأعلى
-                        معايير الجودة والأمان. فريقنا المدرب جاهز لخدمتكم على
-                        مدار الساعة.
-                    </p>
-                </div>
-            </div>
+    <!-- Page Header -->
+    <section class="page-header"></section>
 
-            <!-- Slide 2: Qatar Services -->
-            <div class="slide slide-qatar">
-                <div class="slide-bg"></div>
-                <div class="slide-content">
-                    <div class="flag-icon">🇶🇦</div>
-                    <h2 class="slide-title" data-i18n="hero_qatar_title">خدمات عامة والتوصيل داخل قطر</h2>
-                    <p class="slide-description" data-i18n="hero_qatar_desc">
-                        خدمات توصيل محلية داخل قطر بمعايير عالية الجودة
-                        والسرعة، مع توثيق كامل لكل عملية. نوفر خدمات
-                        متنوعة تلبي جميع احتياجاتكم من التوصيل الشخصي
-                        إلى الخدمات المؤسسية.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Slide 3: 24/7 Service -->
-            <div class="slide slide-service">
-                <div class="slide-bg"></div>
-                <div class="slide-content">
-                    <div class="flag-icon">⏰</div>
-                    <h2 class="slide-title" data-i18n="hero_service_title">خدمة 24/7</h2>
-                    <p class="slide-description" data-i18n="hero_service_desc">
-                        متاحون على مدار الساعة طوال أيام الأسبوع
-                        لخدمتكم وتلبية احتياجاتكم. فريقنا جاهز دائماً
-                        للرد على استفساراتكم وتنفيذ طلبات التوصيل
-                        في أي وقت تحتاجون فيه خدماتنا.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Slide 4: Why Choose Us -->
-            <div class="slide slide-why">
-                <div class="slide-bg"></div>
-                <div class="slide-content">
-                    <div class="flag-icon">⭐</div>
-                    <h2 class="slide-title" data-i18n="hero_why_title">لماذا تختار Tn-QA Delivery؟</h2>
-                    <p class="slide-description" data-i18n="hero_why_desc">
-                        نتميز بمجموعة من المزايا التي تجعلنا الخيار الأول
-                        لخدمات التوصيل في تونس وقطر. نلتزم بأعلى معايير
-                        الجودة والأمان، مع فريق محترف ومدرب على تلبية
-                        جميع احتياجاتكم بكفاءة واحترافية.
-                    </p>
-                </div>
-            </div>
+    <!-- Welcome Message -->
+    <section class="welcome-message">
+        <div class="container animate-on-scroll">
+            <h1 class="welcome-title" data-i18n="welcome_title_tn">مرحبًا بك في منصتنا</h1>
+            <p class="welcome-text" data-i18n="welcome_desc">
+                نوفر لك خدمات توصيل وحلول عملية بسرعة، ووضوح، واحترام<br>
+                أنت اطلب الخدمة، واحنا نهتم بالتنفيذ من البداية للنهاية بكل ثقة
+            </p>
         </div>
-
-        <!-- Slider Controls -->
-        <div class="slider-controls">
-            <button class="slider-btn prev" onclick="changeSlide(-1)" aria-label="السابق">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="15 18 9 12 15 6"></polyline>
-                </svg>
-            </button>
-            <div class="slider-dots">
-                <span class="dot active" onclick="goToSlide(0)"></span>
-                <span class="dot" onclick="goToSlide(1)"></span>
-                <span class="dot" onclick="goToSlide(2)"></span>
-                <span class="dot" onclick="goToSlide(3)"></span>
-            </div>
-            <button class="slider-btn next" onclick="changeSlide(1)" aria-label="التالي">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                </svg>
-            </button>
-        </div>
-
-        <!-- Quick Order Button -->
-        <a href="contact.html" class="quick-order-btn" data-i18n="btn_order_now">
-            اطلب الخدمة الآن
-        </a>
     </section>
 
-    <!-- Quick Contact Section -->
-    <section class="quick-contact">
+    <!-- Tunisia Services -->
+    <section id="tunisia" class="services-section tunisia-section">
         <div class="container">
-            <h2 class="section-title animate-on-scroll" data-i18n="quick_contact_title">تواصل معنا الآن</h2>
-            <div class="contact-cards">
-                <div class="contact-card tunisia-card animate-on-scroll delay-100">
-                    <div class="card-header">
-                        <div class="card-flag">🇹🇳</div>
-                        <h3 data-i18n="tunisia">تونس</h3>
-                    </div>
-                    <a href="services-tunisia.html" class="slide-btn"
-                        style="padding: 0.8rem 2rem; font-size: 1rem; margin-top: 1rem; width: 100%; text-align: center; background: var(--tunisia-red); color: #fff; border: none; box-shadow: 0 4px 15px rgba(231, 0, 19, 0.3);"
-                        data-i18n="btn_browse_services">
-                        تصفح الخدمات
-                    </a>
-                </div>
 
-                <div class="contact-card qatar-card animate-on-scroll delay-200">
-                    <div class="card-header">
-                        <div class="card-flag">🇶🇦</div>
-                        <h3 data-i18n="qatar">قطر</h3>
-                    </div>
-                    <a href="services-qatar.html" class="slide-btn"
-                        style="padding: 0.8rem 2rem; font-size: 1rem; margin-top: 1rem; width: 100%; text-align: center; background: var(--qatar-maroon); color: #fff; border: none; box-shadow: 0 4px 15px rgba(141, 27, 61, 0.3);"
-                        data-i18n="btn_browse_services">
-                        تصفح الخدمات
-                    </a>
-                </div>
+            <!-- Dynamic Services Container -->
+            <div class="services-grid">
+                <!-- Content injected by script.js -->
+            </div>
+
+            <!-- Independent Merchant Section -->
+            <div class="merchant-container">
+                <!-- Content injected by script.js -->
             </div>
         </div>
     </section>

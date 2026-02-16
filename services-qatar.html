@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tn-QA Delivery - خدمة توصيل سريعة وآمنة في تونس وقطر">
-    <meta name="keywords" content="توصيل، تونس، قطر، خدمات توصيل، Tn-QA Delivery">
+    <meta name="description" content="خدمات Tn-QA Delivery في قطر - توصيل سريع وآمن">
+    <meta name="keywords" content="توصيل قطر، خدمات توصيل، Tn-QA Delivery قطر">
     <meta name="author" content="Tn-QA Delivery">
-    <title>Tn-QA Delivery - خدمة توصيل سريعة وآمنة</title>
+    <title>Tn-QA Delivery - خدمات قطر</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +29,7 @@
             </a>
 
             <div class="nav-links" id="navLinks">
-                <a href="index.html" class="nav-link active" data-i18n="nav_home">الرئيسية</a>
+                <a href="index.html" class="nav-link" data-i18n="nav_home">الرئيسية</a>
                 <a href="contact.html" class="nav-link" data-i18n="nav_contact">التواصل</a>
                 <button class="lang-toggle" id="langToggle" onclick="switchLanguage(currentLang === 'ar' ? 'en' : 'ar')"
                     aria-label="Switch language">
@@ -65,122 +65,47 @@
         </div>
     </nav>
 
-    <!-- Hero Slider Section -->
-    <section class="hero-slider">
-        <div class="slider-container">
-            <!-- Slide 1: Tunisia Services -->
-            <div class="slide active slide-tunisia">
-                <div class="slide-bg"></div>
-                <div class="slide-content">
-                    <div class="flag-icon">🇹🇳</div>
-                    <h2 class="slide-title" data-i18n="hero_tunisia_title">خدمات توصيل الأفراد والأغراض داخل تونس</h2>
-                    <p class="slide-description" data-i18n="hero_tunisia_desc">
-                        نقدم لكم خدمة توصيل سريعة وآمنة داخل دولة تونس،
-                        مع ضمان وصول أغراضكم في الوقت المحدد وبأعلى
-                        معايير الجودة والأمان. فريقنا المدرب جاهز لخدمتكم على
-                        مدار الساعة.
-                    </p>
-                </div>
-            </div>
+    <!-- Page Header -->
+    <section class="page-header"></section>
 
-            <!-- Slide 2: Qatar Services -->
-            <div class="slide slide-qatar">
-                <div class="slide-bg"></div>
-                <div class="slide-content">
-                    <div class="flag-icon">🇶🇦</div>
-                    <h2 class="slide-title" data-i18n="hero_qatar_title">خدمات عامة والتوصيل داخل قطر</h2>
-                    <p class="slide-description" data-i18n="hero_qatar_desc">
-                        خدمات توصيل محلية داخل قطر بمعايير عالية الجودة
-                        والسرعة، مع توثيق كامل لكل عملية. نوفر خدمات
-                        متنوعة تلبي جميع احتياجاتكم من التوصيل الشخصي
-                        إلى الخدمات المؤسسية.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Slide 3: 24/7 Service -->
-            <div class="slide slide-service">
-                <div class="slide-bg"></div>
-                <div class="slide-content">
-                    <div class="flag-icon">⏰</div>
-                    <h2 class="slide-title" data-i18n="hero_service_title">خدمة 24/7</h2>
-                    <p class="slide-description" data-i18n="hero_service_desc">
-                        متاحون على مدار الساعة طوال أيام الأسبوع
-                        لخدمتكم وتلبية احتياجاتكم. فريقنا جاهز دائماً
-                        للرد على استفساراتكم وتنفيذ طلبات التوصيل
-                        في أي وقت تحتاجون فيه خدماتنا.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Slide 4: Why Choose Us -->
-            <div class="slide slide-why">
-                <div class="slide-bg"></div>
-                <div class="slide-content">
-                    <div class="flag-icon">⭐</div>
-                    <h2 class="slide-title" data-i18n="hero_why_title">لماذا تختار Tn-QA Delivery؟</h2>
-                    <p class="slide-description" data-i18n="hero_why_desc">
-                        نتميز بمجموعة من المزايا التي تجعلنا الخيار الأول
-                        لخدمات التوصيل في تونس وقطر. نلتزم بأعلى معايير
-                        الجودة والأمان، مع فريق محترف ومدرب على تلبية
-                        جميع احتياجاتكم بكفاءة واحترافية.
-                    </p>
-                </div>
-            </div>
+    <!-- Welcome Message -->
+    <section class="welcome-message">
+        <div class="container animate-on-scroll">
+            <h1 class="welcome-title" data-i18n="welcome_title_qa">مرحبًا بك في منصتنا</h1>
+            <p class="welcome-text" data-i18n="welcome_desc">
+                نوفر لك خدمات توصيل وحلول عملية بسرعة، ووضوح، واحترام<br>
+                أنت اطلب الخدمة، واحنا نهتم بالتنفيذ من البداية للنهاية بكل ثقة
+            </p>
         </div>
-
-        <!-- Slider Controls -->
-        <div class="slider-controls">
-            <button class="slider-btn prev" onclick="changeSlide(-1)" aria-label="السابق">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="15 18 9 12 15 6"></polyline>
-                </svg>
-            </button>
-            <div class="slider-dots">
-                <span class="dot active" onclick="goToSlide(0)"></span>
-                <span class="dot" onclick="goToSlide(1)"></span>
-                <span class="dot" onclick="goToSlide(2)"></span>
-                <span class="dot" onclick="goToSlide(3)"></span>
-            </div>
-            <button class="slider-btn next" onclick="changeSlide(1)" aria-label="التالي">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                </svg>
-            </button>
-        </div>
-
-        <!-- Quick Order Button -->
-        <a href="contact.html" class="quick-order-btn" data-i18n="btn_order_now">
-            اطلب الخدمة الآن
-        </a>
     </section>
 
-    <!-- Quick Contact Section -->
-    <section class="quick-contact">
+    <!-- Qatar Services -->
+    <section id="qatar" class="services-section qatar-section">
         <div class="container">
-            <h2 class="section-title animate-on-scroll" data-i18n="quick_contact_title">تواصل معنا الآن</h2>
-            <div class="contact-cards">
-                <div class="contact-card tunisia-card animate-on-scroll delay-100">
-                    <div class="card-header">
-                        <div class="card-flag">🇹🇳</div>
-                        <h3 data-i18n="tunisia">تونس</h3>
-                    </div>
-                    <a href="services-tunisia.html" class="slide-btn"
-                        style="padding: 0.8rem 2rem; font-size: 1rem; margin-top: 1rem; width: 100%; text-align: center; background: var(--tunisia-red); color: #fff; border: none; box-shadow: 0 4px 15px rgba(231, 0, 19, 0.3);"
-                        data-i18n="btn_browse_services">
-                        تصفح الخدمات
-                    </a>
-                </div>
 
-                <div class="contact-card qatar-card animate-on-scroll delay-200">
-                    <div class="card-header">
-                        <div class="card-flag">🇶🇦</div>
-                        <h3 data-i18n="qatar">قطر</h3>
-                    </div>
-                    <a href="services-qatar.html" class="slide-btn"
-                        style="padding: 0.8rem 2rem; font-size: 1rem; margin-top: 1rem; width: 100%; text-align: center; background: var(--qatar-maroon); color: #fff; border: none; box-shadow: 0 4px 15px rgba(141, 27, 61, 0.3);"
-                        data-i18n="btn_browse_services">
-                        تصفح الخدمات
+            <div id="qatar-content">
+                <!-- Content injected by script.js -->
+            </div>
+
+            <div class="cta-box qatar-cta animate-on-scroll">
+                <h3 data-i18n="cta_custom_service">هل تحتاج خدمة خاصة؟</h3>
+                <p data-i18n="cta_custom_desc">نحن نقدم حلولاً مخصصة لتلبية احتياجاتك الفريدة</p>
+                <div class="cta-buttons">
+                    <a href="tel:+97471375390" class="btn btn-primary pulse-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <span data-i18n="btn_call_now">اتصل الآن</span>
+                    </a>
+                    <a href="https://wa.me/+97471375390" target="_blank" class="btn btn-whatsapp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        <span data-i18n="btn_whatsapp">واتساب</span>
                     </a>
                 </div>
             </div>
@@ -271,7 +196,7 @@
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/21656471550" class="floating-whatsapp" target="_blank" aria-label="WhatsApp">
+    <a href="https://wa.me/+97471375390" class="floating-whatsapp" target="_blank" aria-label="WhatsApp">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
             <path
                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />

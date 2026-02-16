@@ -10,6 +10,12 @@ const translations = {
         company_name: 'Tn-QA Delivery',
         company_tagline: 'خدمة توصيل سريعة وآمنة',
 
+        // Welcome Section
+        welcome_title: 'مرحباً بك في منصتنا',
+        welcome_title_tn: 'مرحبًا بك في منصتنا في تونس 🇹🇳',
+        welcome_title_qa: 'مرحبًا بك في منصتنا في قطر 🇶🇦',
+        welcome_desc: 'نوفر لك خدمات توصيل وحلول عملية بسرعة، ووضوح، واحترام. أنت اطلب الخدمة، واحنا نهتم بالتنفيذ من البداية للنهاية بكل ثقة.',
+
         // Hero Section
         hero_tunisia_title: 'خدمات توصيل الأفراد والأغراض داخل تونس',
         hero_tunisia_desc: 'نقدم لكم خدمة توصيل سريعة وآمنة داخل دولة تونس، مع ضمان وصول أغراضكم في الوقت المحدد وبأعلى معايير الجودة والأمان. فريقنا المدرب جاهز لخدمتكم على مدار الساعة.',
@@ -141,6 +147,12 @@ const translations = {
         nav_contact: 'Contact',
         company_name: 'Tn-QA Delivery',
         company_tagline: 'Fast and Safe Delivery Service',
+
+        // Welcome Section
+        welcome_title: 'Welcome to Our Platform',
+        welcome_title_tn: 'Welcome to Our Platform in Tunisia 🇹🇳',
+        welcome_title_qa: 'Welcome to Our Platform in Qatar 🇶🇦',
+        welcome_desc: 'We provide practical delivery solutions with speed, clarity, and respect. You request the service, and we handle the execution from start to finish with confidence.',
 
         // Hero Section
         hero_tunisia_title: 'Delivery Services for People and Goods in Tunisia',

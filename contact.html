@@ -30,7 +30,6 @@
 
             <div class="nav-links" id="navLinks">
                 <a href="index.html" class="nav-link" data-i18n="nav_home">الرئيسية</a>
-                <a href="services.html" class="nav-link" data-i18n="nav_services">الخدمات</a>
                 <a href="contact.html" class="nav-link active" data-i18n="nav_contact">التواصل</a>
                 <button class="lang-toggle" id="langToggle" onclick="switchLanguage(currentLang === 'ar' ? 'en' : 'ar')"
                     aria-label="Switch language">
@@ -68,11 +67,13 @@
 
     <!-- Page Header -->
     <section class="page-header">
-        <div class="container animate-on-scroll">
-            <h1 data-i18n="contact_page_title">تواصل معنا</h1>
-            <p data-i18n="contact_page_desc">نسعد بخدمتك والإجابة على جميع استفساراتك</p>
-        </div>
     </section>
+
+    <div class="container animate-on-scroll" style="text-align: center; margin-top: 3rem; margin-bottom: 2rem;">
+        <h1 data-i18n="contact_page_title" class="contact-page-title-custom">تواصل معنا</h1>
+        <p data-i18n="contact_page_desc" style="font-size: 1.2rem; color: var(--gray-600);">نسعد بخدمتك والإجابة على
+            جميع استفساراتك</p>
+    </div>
 
     <!-- Contact Section -->
     <section class="contact-section">
@@ -268,7 +269,6 @@
                     <h4 class="footer-title" data-i18n="footer_quick_links">روابط سريعة</h4>
                     <ul class="footer-links">
                         <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
-                        <li><a href="services.html" data-i18n="nav_services">الخدمات</a></li>
                         <li><a href="contact.html" data-i18n="nav_contact">التواصل</a></li>
                     </ul>
                 </div>
@@ -276,10 +276,10 @@
                 <div class="footer-section">
                     <h4 class="footer-title" data-i18n="footer_our_services">خدماتنا</h4>
                     <ul class="footer-links">
-                        <li><a href="services.html#tunisia" data-i18n="footer_tunisia_services">خدمات تونس</a></li>
-                        <li><a href="services.html#qatar" data-i18n="footer_qatar_services">خدمات قطر</a></li>
-                        <li><a href="services.html" data-i18n="footer_fast_delivery">توصيل سريع</a></li>
-                        <li><a href="services.html" data-i18n="footer_24_7">خدمة 24/7</a></li>
+                        <li><a href="services-tunisia.html" data-i18n="footer_tunisia_services">خدمات تونس</a></li>
+                        <li><a href="services-qatar.html" data-i18n="footer_qatar_services">خدمات قطر</a></li>
+                        <li><a href="services-tunisia.html" data-i18n="footer_fast_delivery">توصيل سريع</a></li>
+                        <li><a href="services-tunisia.html" data-i18n="footer_24_7">خدمة 24/7</a></li>
                     </ul>
                 </div>
 
