@@ -1864,9 +1864,25 @@ a:hover {
         padding: 1rem;
     }
 
+    .hero-slider {
+        height: 60vh;
+        /* Fixed height for mobile */
+        min-height: 400px;
+    }
+
+    .slide-bg {
+        /* Fix for mobile browsers holding onto 'fixed' which hides bg */
+        background-attachment: scroll !important;
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+
     .page-header {
         height: 40vh;
         min-height: 350px;
+        background-attachment: scroll !important;
+        /* Fix for page header too */
+        background-position: center center !important;
     }
 
     .page-header h1 {
@@ -1902,8 +1918,20 @@ a:hover {
 
     .merchant-benefits-grid {
         grid-template-columns: 1fr;
-        /* Single column for benefits */
+        /* Single column */
         gap: 1rem;
+    }
+
+    .merchant-benefit-item {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 1rem;
+        text-align: right;
+    }
+
+    .benefit-icon {
+        margin-left: 1rem;
+        font-size: 2rem;
     }
 
     .section-group-header {
@@ -1967,7 +1995,6 @@ a:hover {
 
     .merchant-premium-wrapper {
         padding: 1.5rem 0.5rem;
-        /* Very compact */
     }
 
     .merchant-main-info h3 {
@@ -1978,8 +2005,30 @@ a:hover {
         font-size: 0.95rem;
     }
 
+    /* Fix for Premium WhatsApp Button Overflow */
+    .premium-wa-btn {
+        padding: 0.8rem 1rem !important;
+        font-size: 0.9rem !important;
+        width: 100%;
+        white-space: normal;
+        /* Allow text wrapping */
+        line-height: 1.4;
+        height: auto;
+        min-height: 50px;
+        border-radius: 12px !important;
+        /* Slightly less rounded to save space */
+    }
+
     .merchant-benefits-grid {
         grid-template-columns: 1fr;
+    }
+
+    .merchant-benefit-item {
+        padding: 0.8rem;
+    }
+
+    .benefit-text {
+        font-size: 1rem;
     }
 
     .floating-whatsapp {
