@@ -573,41 +573,45 @@ a:hover {
 }
 
 .slide-tunisia .slide-bg {
-    background:
+    background-image:
         linear-gradient(135deg, rgba(231, 0, 19, 0.15) 0%, rgba(139, 0, 0, 0.1) 100%),
         linear-gradient(45deg, rgba(199, 169, 66, 0.05) 0%, transparent 50%),
         url('tuinsia.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: auto, auto, cover;
+    background-position: center, center, center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
     animation: backgroundShift 20s ease-in-out infinite;
 }
 
 .slide-qatar .slide-bg {
-    background:
+    background-image:
         linear-gradient(135deg, rgba(141, 27, 61, 0.15) 0%, rgba(85, 0, 32, 0.1) 100%),
         linear-gradient(225deg, rgba(97, 89, 63, 0.05) 0%, transparent 60%),
         url('qatar.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: auto, auto, cover;
+    background-position: center, center, center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
     animation: backgroundShift 25s ease-in-out infinite;
 }
 
 .slide-service .slide-bg {
-    background:
+    background-image:
         linear-gradient(135deg, rgba(199, 169, 66, 0.15) 0%, rgba(133, 100, 4, 0.1) 100%),
         radial-gradient(circle at 50% 50%, rgba(231, 0, 19, 0.05) 0%, transparent 50%),
         url('24-7.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: auto, auto, cover;
+    background-position: center, center, center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 .slide-why .slide-bg {
-    background:
+    background-image:
         linear-gradient(135deg, rgba(44, 95, 45, 0.15) 0%, rgba(21, 64, 22, 0.1) 100%),
         linear-gradient(45deg, rgba(199, 169, 66, 0.05) 0%, transparent 70%),
         url('hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: auto, auto, cover;
+    background-position: center, center, center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 @keyframes backgroundShift {
