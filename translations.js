@@ -39,6 +39,8 @@ const translations = {
 
         // Quick Contact
         quick_contact_title: 'خدمات عامة',
+        card_subtitle_tn: 'خدمات عامه والتوصيل داخل تونس',
+        card_subtitle_qa: 'خدمات عامه والتوصيل داخل قطر',
         tunisia: 'تونس',
         qatar: 'قطر',
 
@@ -78,7 +80,7 @@ const translations = {
         footer_fast_delivery: 'توصيل سريع',
         footer_24_7: 'خدمة 24/7',
         footer_tagline: 'شريكك الموثوق في خدمات التوصيل السريع والآمن في تونس وقطر',
-        footer_rights: '© 2024 Tn-QA Delivery. جميع الحقوق محفوظة',
+        footer_rights: '© 2026 Tn-QA Delivery. جميع الحقوق محفوظة',
 
         // Services Sections
         services_tunisia_title: 'خدمات توصيل داخل تونس',
@@ -177,6 +179,8 @@ const translations = {
 
         // Quick Contact
         quick_contact_title: 'General Services',
+        card_subtitle_tn: 'General Services and Delivery in Tunisia',
+        card_subtitle_qa: 'General Services and Delivery in Qatar',
         tunisia: 'Tunisia',
         qatar: 'Qatar',
 
@@ -216,7 +220,7 @@ const translations = {
         footer_fast_delivery: 'Fast Delivery',
         footer_24_7: '24/7 Service',
         footer_tagline: 'Your trusted partner in fast and safe delivery services in Tunisia and Qatar',
-        footer_rights: '© 2024 Tn-QA Delivery. All rights reserved',
+        footer_rights: '© 2026 Tn-QA Delivery. All rights reserved',
 
         // Services Sections
         services_tunisia_title: 'Delivery Services in Tunisia',

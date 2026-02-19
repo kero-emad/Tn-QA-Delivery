@@ -211,9 +211,9 @@ const servicesData = {
         // خدمات التوصيل المدمجة
         {
             id: 'tn_delivery',
-            title: 'خدمات التوصيل',
-            titleEn: 'Delivery Services',
-            icon: '🚚',
+            title: 'خدمات التوصيل داخل تونس',
+            titleEn: 'Delivery Services in Tunisia',
+            icon: '🚗',
             description: 'مشاوير، تلاميذ، موظفين،أغراض، طرود، مستندات',
             descriptionEn: 'Rides, Students, Employees, Items, Parcels, Documents',
             phone: '21656471550',
@@ -838,10 +838,14 @@ function openOrderModal(serviceId) {
 
         service.subServices.forEach(subService => {
             const subTitle = (currentLang === 'en' && subService.titleEn) ? subService.titleEn : subService.title;
+            const requestLabel = currentLang === 'en' ? 'Request Service' : 'اطلب هذه الخدمة';
             formHtml += `
                 <div class="sub-service-card" onclick="showSubServiceForm('${service.id}', '${subService.id}')">
                     <div class="sub-service-icon">${subService.icon}</div>
                     <div class="sub-service-title">${subTitle}</div>
+                    <button class="sub-service-btn" onclick="showSubServiceForm('${service.id}', '${subService.id}')">
+                        ${requestLabel}
+                    </button>
                 </div>
             `;
         });
