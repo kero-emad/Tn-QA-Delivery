@@ -17,8 +17,18 @@ function showSlide(n) {
     if (n >= slides.length) currentSlide = 0;
     if (n < 0) currentSlide = slides.length - 1;
 
-    // Add active class to current slide and dot
-    slides[currentSlide].classList.add('active');
+    // Force animation restart by stripping inline animation then re-applying via class
+    const targetSlide = slides[currentSlide];
+    const animatedEls = targetSlide.querySelectorAll('.slide-content, .flag-icon, .slide-title, .slide-description');
+
+    animatedEls.forEach(el => {
+        el.style.animation = 'none';
+        el.offsetHeight; // Force reflow
+        el.style.animation = '';
+    });
+
+    // Activate slide and dot
+    targetSlide.classList.add('active');
     if (dots[currentSlide]) {
         dots[currentSlide].classList.add('active');
     }
@@ -37,11 +47,12 @@ function goToSlide(n) {
 }
 
 function startAutoSlide() {
-    // Auto slide every 8 seconds (slower as requested)
+    // Auto slide every 6 seconds:
+    // Increased gap between elements, total animation time ~3.8s
     autoSlideInterval = setInterval(() => {
         currentSlide++;
         showSlide(currentSlide);
-    }, 8000);
+    }, 5000);
 }
 
 function resetAutoSlide() {
