@@ -2100,7 +2100,22 @@ a:hover {
     .highlight-actions {
         flex-direction: column;
     }
+
+    .merchant-premium-content {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .merchant-badge-row {
+        justify-content: center;
+    }
+
+    .merchant-main-info p {
+        margin-bottom: 1.5rem;
+    }
 }
+
 
 @media (max-width: 480px) {
     .container {
@@ -2493,17 +2508,16 @@ a:hover {
     backdrop-filter: blur(20px);
     border-radius: 24px;
     border: 2px solid rgba(231, 0, 19, 0.25);
-    padding: 2rem 2.5rem;
+    padding: 2.5rem 3rem;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     transition: var(--transition);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
+
 
 .merchant-premium-wrapper::after {
     display: none;
@@ -2530,15 +2544,15 @@ a:hover {
     }
 }
 
-/* Badge row: Business Section label + Certified badge side by side */
 .merchant-badge-row {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 0.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     flex-wrap: wrap;
 }
+
 
 .merchant-business-label {
     font-size: 0.65rem;
@@ -2571,7 +2585,13 @@ a:hover {
 .merchant-premium-content {
     z-index: 2;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    text-align: right;
 }
+
 
 .merchant-main-info h3 {
     font-size: 1.5rem;
@@ -2580,6 +2600,15 @@ a:hover {
     margin-bottom: 0.5rem;
     letter-spacing: -0.5px;
 }
+
+.merchant-premium-wrapper.qatar-branded {
+    border-color: rgba(141, 27, 61, 0.25);
+}
+
+.merchant-premium-wrapper.qatar-branded .merchant-main-info h3 {
+    color: var(--qatar-maroon);
+}
+
 
 .merchant-main-info p {
     font-size: 1rem;

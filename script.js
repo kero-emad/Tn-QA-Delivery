@@ -313,12 +313,14 @@ const servicesData = {
             id: 'qa_delivery',
             title: 'التوصيل المحلي',
             titleEn: 'Local Delivery',
-            icon: '🚛',
+            icon: '🚗',
+
             description: 'أغراض، موظفين، مشاوير، هدايا، مواد استهلاكية، اشتراك شهري',
             descriptionEn: 'Items, Employees, Rides, Gifts, Groceries, Monthly Subs',
-            phone: '97471375390',
+            phone: '97431691024',
             type: 'consolidated',
             section: 'local',
+
             subServices: [
                 {
                     id: 'qa_items',
@@ -482,7 +484,21 @@ const servicesData = {
             hasModal: true,
             noForm: true
         },
+        // خدمة التجار
+        {
+            id: 'qa_merchants',
+            title: 'خدمة التجار والمتاجر',
+            titleEn: 'Merchant & Store Services',
+            icon: '🏪',
+            description: 'شراكات توصيل للمحلات والمتاجر داخل قطر',
+            descriptionEn: 'Delivery partnerships for shops and stores in Qatar',
+            phone: '97431691024',
+            message: 'السلام عليكم،\nأرغب في الشراكة أو الاشتراك في خدمات التوصيل داخل قطر.\n\nاسم المتجر:\nنوع النشاط:\nالمنطقة:\nعدد الطلبات التقريبية يوميًا:\nرقم التواصل:',
+            messageEn: 'Hello,\nI am interested in partnering or subscribing to delivery services in Qatar.\n\nStore Name:\nBusiness Type:\nArea:\nApprox. Daily Orders:\nContact Number:',
+            type: 'merchant_section'
+        },
         // الصيانة (في النهاية)
+
         {
             id: 'qa_maintenance',
             title: 'خدمة صيانة عامة',
@@ -561,12 +577,13 @@ function renderServices() {
 
         // Group Qatar services by section
         const sections = {
-            'local': { title: t('section_local_qatar'), phone: '97471375390', icon: '🇶🇦' },
+            'local': { title: t('section_local_qatar'), phone: '97431691024', icon: '🇶🇦' },
             'cross_border': { title: t('section_cross_border'), phone: '21656471550', icon: '✈️' },
             'money': { title: t('section_money'), phone: '21656471550', icon: '💱', warning: t('section_money_warning') },
             'cleaning': { title: t('section_cleaning'), phone: '97450074396', icon: '🧹' },
             'cv': { title: t('section_cv'), phone: '33754694', icon: '🧳' }
         };
+
 
         // Helper to format phone for display
         const formatPhone = (p) => p.startsWith('216') ? '+216 ' + p.slice(3) : '+974 ' + p.slice(3);
@@ -574,8 +591,21 @@ function renderServices() {
         // 1. Local Delivery
         renderSection(qatarContainer, sections.local, servicesData.qatar.filter(s => s.section === 'local'));
 
+        // Qatar Merchant Section (Directly under Delivery) - CENTERED & HORIZONTAL
+        const qaMerchantService = servicesData.qatar.find(s => s.type === 'merchant_section');
+        if (qaMerchantService) {
+            const mWrapper = document.createElement('div');
+            mWrapper.className = 'merchant-container';
+            mWrapper.innerHTML = createMerchantCardHTML(qaMerchantService, true);
+            qatarContainer.appendChild(mWrapper);
+        }
+
         // 2. Cross Border
+
+
+
         renderSection(qatarContainer, sections.cross_border, servicesData.qatar.filter(s => s.section === 'cross_border'));
+
 
         // 3. Money Transfer
         renderSection(qatarContainer, sections.money, servicesData.qatar.filter(s => s.section === 'money'), true);
@@ -657,9 +687,12 @@ function createServiceCardHTML(service, countryName, overridePhone = null) {
     `;
 }
 
-function createMerchantCardHTML(service) {
+function createMerchantCardHTML(service, isQatar = false) {
     const text = getServiceText(service);
-    const waLabel = currentLang === 'en' ? 'WhatsApp – Tunisia Merchants' : 'WhatsApp – رسالة التجار';
+    const waLabel = currentLang === 'en' ? 'WhatsApp – Business Inquiry' : 'WhatsApp – رسالة التجار';
+
+    // Determine branding class
+    const brandingClass = isQatar ? 'qatar-branded' : '';
 
     // Certified Partner Badge & Benefits
     const certifiedLabel = currentLang === 'en' ? 'Certified Partner' : 'شريك معتمد';
@@ -678,8 +711,9 @@ function createMerchantCardHTML(service) {
     `).join('');
 
     return `
-        <div class="merchant-premium-wrapper animate-on-scroll">
+        <div class="merchant-premium-wrapper ${brandingClass} animate-on-scroll">
             <div class="merchant-badge-row">
+
                 <span class="merchant-business-label">BUSINESS SECTION</span>
                 <div class="merchant-certified-badge">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.7l-3.61.81.34 3.7L1 12l2.44 2.79-.34 3.69 3.61.82 1.89 3.2L12 21.04l3.4 1.46 1.89-3.2 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"/></svg>
@@ -1135,10 +1169,20 @@ if (contactForm) {
             // Determine WhatsApp number based on country
             let whatsappNumber = '';
             if (formData.country === 'qatar') {
-                whatsappNumber = '97431691024';
+                // If service is delivery or merchant, use new number
+                if (formData.service.includes('توصيل') || formData.service.includes('التجار')) {
+                    whatsappNumber = '97431691024';
+                } else if (formData.service.includes('سيرة') || formData.service.includes('CV')) {
+                    whatsappNumber = '33754694';
+                } else if (formData.service.includes('تنظيف')) {
+                    whatsappNumber = '97450074396';
+                } else {
+                    whatsappNumber = '97471375390'; // Original Qatar number for others
+                }
             } else {
                 whatsappNumber = '21656471550';
             }
+
 
             const message = `*استفسار من نموذج التواصل*%0a` +
                 `*الاسم:* ${formData.name}%0a` +
