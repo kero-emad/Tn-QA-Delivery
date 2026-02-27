@@ -462,7 +462,7 @@ const servicesData = {
             ],
             noForm: true
         },
-        // السيرة الذاتية (كما هي)
+        // السيرة الذاتية
         {
             id: 'qa_cv',
             title: 'خدمات السيرة الذاتية',
@@ -470,18 +470,11 @@ const servicesData = {
             icon: '🧳',
             description: 'سيرة ذاتية احترافية لسوق قطر (ATS-Friendly)',
             descriptionEn: 'Professional CV for the Qatar market (ATS-Friendly)',
-            phone: '33754694',
-            message: 'السلام عليكم،\nأود طلب خدمة إعداد سيرة ذاتية احترافية لسوق العمل في قطر.\n\n- نوع الخدمة (إعداد جديدة / تعديل CV موجود):\n- مجال العمل:\n- اللغة المطلوبة (عربي / إنجليزي / كلاهما):\nشكرًا لكم.',
-            messageEn: 'Hello,\nI would like to request professional CV service for Qatar.\n\n- Service Type (New/Edit):\n- Field of Work:\n- Language (Arabic/English/Both):\nThank you.',
-            type: 'highlight_section',
-            badge: 'ATS',
-            details: [
-                'CV واحد → 30 ريال',
-                'عرض 2 CV → 50 ريال',
-                'عرض 3 CV → 70 ريال',
-                'Cover Letter → 15 ريال'
-            ],
-            hasModal: true,
+            phone: '97471375390',
+            message: 'السلام عليكم،\nأود طلب خدمة إعداد سيرة ذاتية احترافية لسوق العمل في قطر.',
+            messageEn: 'Hello,\nI would like to request professional CV service for Qatar.',
+            type: 'card',
+            warning: 'maintenance_soon',
             noForm: true
         },
         // خدمة التجار
@@ -616,10 +609,15 @@ function renderServices() {
             qatarContainer.innerHTML += createHighlightSectionHTML(cleaningService, sections.cleaning);
         }
 
-        // 5. CV Services (Highlight + Modal)
+        // 5. CV Services
         const cvService = servicesData.qatar.find(s => s.id === 'qa_cv');
         if (cvService) {
-            qatarContainer.innerHTML += createHighlightSectionHTML(cvService, sections.cv);
+            const cvSection = {
+                title: cvService.title,
+                phone: cvService.phone,
+                icon: cvService.icon
+            };
+            renderSection(qatarContainer, cvSection, [cvService]);
         }
 
         // 6. Maintenance (At the End)
