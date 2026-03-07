@@ -101,7 +101,7 @@ const translations = {
         section_money: 'تحويل الريال القطري ⇄ الدينار التونسي',
         section_money_warning: 'هذه الخدمة للتنسيق والتوثيق فقط. لا يتم استلام أو تحويل أي أموال عبر الموقع أو WhatsApp.',
         section_cleaning: 'شركة وان ديركشن للتنظيفات',
-        section_cv: 'خدمات السيرة الذاتية',
+        section_cv: 'استشارة قانونية وتخليص معاملات',
         whatsapp_unified: 'رقم WhatsApp موحد:',
 
         // General Maintenance Service
@@ -110,7 +110,7 @@ const translations = {
         maintenance_soon: 'قريباً - سيتم تفعيل هذه الخدمة في المستقبل',
 
         // Prices
-        price_5_hours: '5 ساعات ← 80 ريال',
+        price_5_hours: '5 ساعات ← 100 ريال',
         price_8_hours: '150 ريال ← 8 ساعات',
         price_monthly: 'عقد شهري → زيارة إضافية مجانية',
         price_stay_in: 'مبيت → 2200 ريال',
@@ -128,7 +128,7 @@ const translations = {
         opt_qatar_consumables: 'توصيل مواد استهلاكية',
         opt_qatar_monthly: 'اشتراك شهري ',
         opt_qatar_cleaning: 'شركة وان ديركشن للتنظيفات',
-        opt_qatar_cv: 'خدمات السيرة الذاتية (CV)',
+        opt_qatar_cv: 'استشارة قانونية وتخليص معاملات',
         opt_sell_scale: 'تحب تبيع ميزان',
         opt_reserve_qa_tn: 'حجز ميزان من قطر إلى تونس',
         opt_reserve_tn_qa: 'حجز ميزان من تونس إلى قطر',
@@ -241,7 +241,7 @@ const translations = {
         section_money: 'Qatari Riyal ⇄ Tunisian Dinar Exchange',
         section_money_warning: 'This service is for coordination and documentation only. No money is received or transferred through the site or WhatsApp.',
         section_cleaning: 'One Direction Cleaning Co.',
-        section_cv: 'CV Services',
+        section_cv: 'Legal Consultation & Document Clearance',
         whatsapp_unified: 'Unified WhatsApp:',
 
         // General Maintenance Service
@@ -250,7 +250,7 @@ const translations = {
         maintenance_soon: 'Coming Soon - This service will be activated in the future',
 
         // Prices
-        price_5_hours: '5 Hours → 80 QR',
+        price_5_hours: '5 Hours → 100 QR',
         price_8_hours: '8 Hours → 150 QR',
         price_monthly: 'Monthly Contract → Free Additional Visit',
         price_stay_in: 'Stay-in → 2200 QR',
@@ -268,7 +268,7 @@ const translations = {
         opt_qatar_consumables: 'Grocery Delivery (Qatar)',
         opt_qatar_monthly: 'Monthly Subscription (Qatar)',
         opt_qatar_cleaning: 'One Direction Cleaning Co.',
-        opt_qatar_cv: 'CV Services',
+        opt_qatar_cv: 'Legal Consultation & Document Clearance',
         opt_sell_scale: 'Sell Scale Package',
         opt_reserve_qa_tn: 'Reserve Scale: Qatar → Tunisia',
         opt_reserve_tn_qa: 'Reserve Scale: Tunisia → Qatar',

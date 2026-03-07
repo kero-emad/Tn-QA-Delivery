@@ -455,26 +455,25 @@ const servicesData = {
             messageEn: 'Hello,\nI would like to request cleaning service from "One Direction" in Qatar.\n\n- Place Type (Apartment/Villa/Office):\n- Hours/Stay-in:\n- Location:\n- Required Time:\nThank you.',
             type: 'highlight_section',
             details: [
-                '5 ساعات → 80 ريال',
+                '5 ساعات → 100 ريال',
                 '8 ساعات → 150 ريال',
                 'عقد شهري → زيارة إضافية مجانية',
                 'مبيت → 2200 ريال'
             ],
             noForm: true
         },
-        // السيرة الذاتية
+        // الاستشارات القانونية وتخليص المعاملات
         {
             id: 'qa_cv',
-            title: 'خدمات السيرة الذاتية',
-            titleEn: 'CV Services',
-            icon: '🧳',
-            description: 'سيرة ذاتية احترافية لسوق قطر (ATS-Friendly)',
-            descriptionEn: 'Professional CV for the Qatar market (ATS-Friendly)',
-            phone: '97471375390',
-            message: 'السلام عليكم،\nأود طلب خدمة إعداد سيرة ذاتية احترافية لسوق العمل في قطر.',
-            messageEn: 'Hello,\nI would like to request professional CV service for Qatar.',
+            title: 'استشارة قانونية وتخليص معاملات',
+            titleEn: 'Legal Consultation & Document Clearance',
+            icon: '⚖️',
+            description: 'استشارات قانونية متخصصة وتخليص المعاملات الرسمية في قطر',
+            descriptionEn: 'Specialized legal consultations and official document clearance in Qatar',
+            phone: '21656471550',
+            message: 'السلام عليكم،\nأود طلب خدمة استشارة قانونية أو تخليص معاملات في قطر.',
+            messageEn: 'Hello,\nI would like to request a legal consultation or document clearance service in Qatar.',
             type: 'card',
-            warning: 'maintenance_soon',
             noForm: true
         },
         // خدمة التجار
