@@ -7,7 +7,7 @@ const translations = {
         nav_home: 'الرئيسية',
         nav_services: 'الخدمات',
         nav_contact: 'التواصل',
-        company_name: 'Tounsia Connect',
+        company_name: 'Tounsi Connect',
         company_tagline: 'خدمة توصيل سريعة وآمنة',
 
         // Welcome Section
@@ -147,7 +147,7 @@ const translations = {
         nav_home: 'Home',
         nav_services: 'Services',
         nav_contact: 'Contact',
-        company_name: 'Tounsia Connect',
+        company_name: 'Tounsi Connect',
         company_tagline: 'Fast and Safe Delivery Service',
 
         // Welcome Section
